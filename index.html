@@ -5,8 +5,176 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hotel Booking</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    
+    <header class="header">
+        <div class="container">
+            <div class="header__wrapper">
+                <div class="header-top">
+                    <div class="header__right-block right-block">
+                        <a href="" class="logotype">Best <span class="logotype logotype_color">tour</span> plan</a>
+                        <form action="" class="form-search">
+                            <input class="form-search__input" type="text" placeholder="Search Location |">
+                            <button class="form-search__button">
+                                <svg class="icon">
+                                    <use xlink:href="img/icons/sprite.svg#search"></use>
+                                </svg>
+                            </button>
+                        </form>
+                    </div>
+                    <a href="" class="user">
+                        <img src="img/avatar.svg" alt="Avatar" class="user__avatar">
+                        <span class="user__name">Nathan</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="header-menu">
+            <div class="container">
+                <nav class="header-nav">
+                    <ul class="header-nav__list">
+                        <li class="header-list-item">
+                            <a href="" class="header-list-item-link">All Deals</a>
+                        </li>
+                        <li class="header-list-item">
+                            <a href="" class="header-list-item-link">Hotels</a>
+                        </li>
+                        <li class="header-list-item">
+                            <a href="" class="header-list-item-link">Activities</a>
+                        </li>
+                        <li class="header-list-item">
+                            <a href="" class="header-list-item-link">Hotel Day Packages</a>
+                        </li>
+                        <li class="header-list-item">
+                            <a href="" class="header-list-item-link">Restaurants</a>
+                        </li>
+                        <li class="header-list-item">
+                            <a href="" class="header-list-item-link">Events</a>
+                        </li>
+                        <li class="header-list-item">
+                            <a href="" class="header-list-item-link">Rodrigues</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <div class="breadcrumbs-primary header-breadcrumbs">
+            <div class="container">
+                <div class="breadcrumbs-primary__wrapper">
+                    <ul class="breadcrumbs-primary__list breadcrumbs-list">
+                        <li class="breadcrumbs-primary__item breadcrumbs-item"><a href=""
+                                class="breadcrumbs-primary__link breadcrumbs-link">Home</a></li>
+                        <li class="breadcrumbs-primary__item breadcrumbs-item"><a href=""
+                                class="breadcrumbs-primary__link breadcrumbs-link">Flash Offers</a></li>
+                        <li class="breadcrumbs-primary__item breadcrumbs-item"><a href=""
+                                class="breadcrumbs-primary__link breadcrumbs-link">Grand Hilton Hotel</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="about">
+        <div class="container">
+            <div class="about__wrapper">
+                <div class="about__header">
+                        <div class="about__hotel-info">
+                            <h1 class="about__title">GRAND HILTON HOTEL<span class="color-badge"> Flash Offer</span></h1>
+                            <div class="breadcrumbs-secondary">
+                                <ul class="breadcrumbs-secondary__list breadcrumbs-list">
+                                    <li class="breadcrumbs-secondary__item breadcrumbs-item"><a href="" class="breadcrumbs-secondary__link breadcrumbs-link">Half-Board</a></li>
+                                    <li class="breadcrumbs-secondary__item breadcrumbs-item"><a href="" class="breadcrumbs-secondary__link breadcrumbs-link">All Inclusive + Complimentary Activities +
+                                            Child Stays Free</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="user-rating">
+                            <a href="" class="user-rating__text">
+                                User rating
+                            </a>
+                            <div class="user-rating__score">
+                                <span class="score-real">4.5</span>
+                                <span class="score-max">5</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--// about wrapper-->
+                <!--about center-->
+                <div class="about__center">
+                    <div class="about__img-wrapper">
+                        <img src="img/hotels/grand-hilton.jpg" alt="" class="hotel-img">
+                    </div>
+                    <div class="about__details-wrapper">
+                        <div class="about__details">
+                            <div class="details-info">
+                                <div class="details-info__price">
+                                    <div class="about__item">
+                                        <span class="about-text">price starts as</span>
+                                        <span class="about-pice">$ 8,500</span>
+                                        <div class="details-breadcrumbs">
+                                            <span class="details-breadcrumbs__text">
+                                                per room
+                                            </span>
+                                            <span class="details-breadcrumbs__text">
+                                                night
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="about__item">
+                                        <span class="about-text about__add-info">
+                                            <svg class="icon">
+                                                <use xlink:href="img/icons/sprite.svg#user"></use>
+                                            </svg>
+                                            2 x Guests
+                                        </span>
+                                        <span class="about-text about__add-info">
+                                            <svg class="icon">
+                                                <use xlink:href="img/icons/sprite.svg#home"></use>
+                                            </svg>
+                                            1 x Room
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="about__call-click">
+                                    <p class="about-text click-on-text">Quick Booking</p>
+                                    <a href="" class="about-text click-on-number">
+                                        <svg class="icon">
+                                            <use xlink:href="img/icons/sprite.svg#phone-call"></use>
+                                        </svg>
+                                        12100
+                                    </a>
+                                </div>
+                            </div>
+                            <button class="details-button">View Other Options</button>
+                        </div>
+                        <div class="about__map">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6307.211177109344!2d-122.42298247859854!3d37.77584529530633!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808580997aeae663%3A0xb2706dff83574f4a!2z0KHQuNGC0Lgt0YXQvtC70Lsg0KHQsNC9LdCk0YDQsNC90YbQuNGB0LrQvg!5e0!3m2!1sru!2sru!4v1637107084701!5m2!1sru!2sru"
+                            width="347" height="213" style="border:0;" allowfullscreen="" loading="lazy">
+                            </iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="newsletter">
+        <div class="container">
+            <div class="newsletter__wrapper">
+                <div class="newsletter-desc">
+                    <h3 class="newsletter__title"><span class="clarification">subscribe to our</span><br>Newsletter</h3>
+                </div>
+                <form action="" class="form-search">
+                    <input class="form-search__input" type="text" placeholder="Your email address">
+                    <button class="form-search__button">Send</button>
+                </form>
+            </div>
+        </div>
+    </section>
 </body>
 </html>
