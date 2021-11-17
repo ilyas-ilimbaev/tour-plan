@@ -328,7 +328,7 @@ color: #FFFFFF;
 /*newsletter*/
 .newsletter {
     position: relative;
-    margin-top: 70px;
+    margin: 70px 0;
     padding: 92px 0;
     background-image: url('../img/newsletter.jpg');
     background-repeat: no-repeat;
