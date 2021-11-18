@@ -5,8 +5,6 @@
 .header-top 
     padding: 40px 0
     background-color: #fff
-
-.header-top 
     display: flex
     align-items: center
     justify-content: space-between
@@ -118,3 +116,35 @@
     font-size: 14px
     line-height: 13px
     color: #0A223D
+
+.menu-button
+    position: relative
+    width: 16px
+    height: 11px
+    cursor: pointer
+
+.menu-button__toggle
+    position: absolute
+    width: 16px
+    height: 1px
+    background-color: $text-color
+
+    &:before
+        content: ""
+        position: absolute
+        display: block
+        top: 8px
+        right: 0
+        width: 16px
+        height: 1px
+        background-color: $text-color
+        
+    &:after
+        content: ""
+        position: absolute
+        display: block
+        right: 0
+        bottom: -4px
+        width: 16px
+        height: 1px
+        background-color: $text-color

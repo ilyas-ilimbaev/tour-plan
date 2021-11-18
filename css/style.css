@@ -1,3 +1,6 @@
+@charset "UTF-8";
+/*переменные*/
+/*основные настройки*/
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -6,7 +9,8 @@
 body {
   margin: 0;
   padding: 0;
-  color: #000;
+  color: #333333;
+  background-color: #F5FAFE;
 }
 
 h1, h2, h3, h4, p, a, ul, li {
@@ -32,6 +36,7 @@ ul {
   height: 16px;
 }
 
+/*секции*/
 /*header*/
 .header {
   background-color: #fff;
@@ -40,9 +45,6 @@ ul {
 .header-top {
   padding: 40px 0;
   background-color: #fff;
-}
-
-.header-top {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -203,6 +205,42 @@ ul {
   color: #0A223D;
 }
 
+.menu-button {
+  position: relative;
+  width: 16px;
+  height: 11px;
+  cursor: pointer;
+}
+
+.menu-button__toggle {
+  position: absolute;
+  width: 16px;
+  height: 1px;
+  background-color: #333333;
+}
+
+.menu-button__toggle:before {
+  content: "";
+  position: absolute;
+  display: block;
+  top: 8px;
+  right: 0;
+  width: 16px;
+  height: 1px;
+  background-color: #333333;
+}
+
+.menu-button__toggle:after {
+  content: "";
+  position: absolute;
+  display: block;
+  right: 0;
+  bottom: -4px;
+  width: 16px;
+  height: 1px;
+  background-color: #333333;
+}
+
 /*about header*/
 .about__header {
   padding: 20px 0;
@@ -300,12 +338,17 @@ ul {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .about__img-wrapper {
   position: relative;
   max-width: 728px;
   margin-right: 30px;
+  margin-bottom: 0;
   border-radius: 8px;
   overflow: hidden;
 }
@@ -326,9 +369,20 @@ ul {
   position: relative;
 }
 
+.about__details-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
 .about__details {
   max-width: 350px;
   max-height: 250px;
+  margin-right: 0;
   padding: 26px;
   background: #0A223D;
   border-radius: 8px;
@@ -460,6 +514,8 @@ ul {
   margin-top: 27px;
   width: 347px;
   height: 213px;
+  border-radius: 10px;
+  overflow: hidden;
 }
 
 /*newsletter*/
@@ -523,5 +579,64 @@ ul {
 
 .newsletter .form-search__button {
   height: 55px;
+}
+
+/*медиа запросы*/
+@media (max-width: 768px) {
+  .container {
+    max-width: 700px;
+  }
+  .logotype {
+    font-size: 18px;
+    line-height: 18px;
+  }
+  .form-search {
+    margin-left: 47px;
+  }
+  .header-list-item-link {
+    font-size: 12px;
+    line-height: 15px;
+  }
+  .menu-button {
+    display: none;
+  }
+  .about__center {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .about__img-wrapper {
+    margin-right: 0;
+    margin-bottom: 30px;
+    max-width: 700px;
+  }
+  .about__details-wrapper {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .about__details {
+    margin-right: 20px;
+  }
+  .about__map {
+    margin-top: 0;
+  }
+}
+
+@media (max-width: 320px) {
+  .container {
+    max-width: 280px;
+  }
+  .form-search, .user, .header-menu {
+    display: none;
+  }
+  .menu-button {
+    display: block;
+  }
 }
 /*# sourceMappingURL=style.css.map */

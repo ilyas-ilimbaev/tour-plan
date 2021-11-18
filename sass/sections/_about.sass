@@ -64,11 +64,13 @@
     display: flex
     justify-content: space-between
     align-items: flex-start
+    flex-direction: column
 
 .about__img-wrapper 
     position: relative
     max-width: 728px
     margin-right: 30px
+    margin-bottom: 0
     border-radius: 8px
     overflow: hidden
     
@@ -85,9 +87,14 @@
 .hotel-img 
     position: relative
 
+.about__details-wrapper
+    display: flex
+    flex-direction: column
+
 .about__details 
     max-width: 350px
     max-height: 250px
+    margin-right: 0
     padding: 26px
     background: #0A223D
     border-radius: 8px
@@ -178,3 +185,5 @@
     margin-top: 27px
     width: 347px
     height: 213px
+    border-radius: 10px
+    overflow: hidden
