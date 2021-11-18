@@ -207,6 +207,7 @@ ul {
 
 .menu-button {
   position: relative;
+  display: none;
   width: 16px;
   height: 11px;
   cursor: pointer;
