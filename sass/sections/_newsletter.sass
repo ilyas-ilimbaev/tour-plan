@@ -1,0 +1,48 @@
+/*newsletter*/
+.newsletter 
+    position: relative
+    margin: 70px 0
+    padding: 92px 0
+    background-image: url('../img/newsletter.jpg')
+    background-repeat: no-repeat
+    background-size: cover
+    background-position: center
+
+.newsletter::after 
+    content: ""
+    position: absolute
+    display: block
+    width: 100%
+    height: 100%
+    top: 0
+    right: 0
+    background-color: #0A223D
+    opacity: 0.5
+
+.newsletter__wrapper 
+    position: relative
+    display: flex
+    justify-content: center
+    align-items: center
+    z-index: 2
+
+.newsletter-desc 
+    display: inline-flex
+
+.newsletter__title 
+    font-family: 'Mulish', sans-serif
+    font-weight: 600
+    font-size: 36px
+    line-height: 45px
+    text-transform: uppercase
+    color: #FFFFFF
+
+.clarification 
+    font-weight: 300
+    font-size: 24px
+    line-height: 30px
+    text-transform: none
+
+.newsletter 
+    .form-search__button 
+        height: 55px
