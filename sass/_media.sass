@@ -39,7 +39,7 @@
         margin-left: 20px
     
 @media (max-width: 768px)
-    .header
+    .header, .about
         padding: 0 20px
     .form-search, .user
         display: none
@@ -47,21 +47,20 @@
         display: block
     .header-menu
         display: none
+    .user-rating
+        display: block
     .about__img-wrapper
         margin-right: 0
         margin-bottom: 30px
         max-width: 700px
-
     .about__details-wrapper
         flex-direction: row
         align-items: center
-
-    .about__details
-        margin-right: 20px
-    
     .about__map
         margin-top: 0
-    
+@media (max-width: 576px)
+    .user-rating
+        display: none    
 @media (max-width: 320px)
     .container
         max-width: 280px

@@ -639,7 +639,7 @@ ul {
 }
 
 @media (max-width: 768px) {
-  .header {
+  .header, .about {
     padding: 0 20px;
   }
   .form-search, .user {
@@ -650,6 +650,9 @@ ul {
   }
   .header-menu {
     display: none;
+  }
+  .user-rating {
+    display: block;
   }
   .about__img-wrapper {
     margin-right: 0;
@@ -665,11 +668,14 @@ ul {
         -ms-flex-align: center;
             align-items: center;
   }
-  .about__details {
-    margin-right: 20px;
-  }
   .about__map {
     margin-top: 0;
+  }
+}
+
+@media (max-width: 576px) {
+  .user-rating {
+    display: none;
   }
 }
 
