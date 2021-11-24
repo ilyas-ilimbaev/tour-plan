@@ -10,7 +10,7 @@ body {
   margin: 0;
   padding: 0;
   color: #333333;
-  background-color: #F5FAFE;
+  background-color: #f5fafe;
 }
 
 h1, h2, h3, h4, p, a, ul, li {
@@ -167,44 +167,7 @@ ul {
           align-items: center;
 }
 
-/*breadcrumbs*/
-.breadcrumbs-primary {
-  padding: 18px 0;
-}
-
-.breadcrumbs-item {
-  position: relative;
-  margin-right: 12px;
-}
-
-.breadcrumbs-item::after {
-  content: "/";
-  position: absolute;
-  display: block;
-  top: 0;
-  right: -9px;
-}
-
-.breadcrumbs-item:last-child::after {
-  content: "";
-}
-
-.breadcrumbs-list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.breadcrumbs-link {
-  font-family: 'Mulish', sans-serif;
-  font-size: 14px;
-  line-height: 13px;
-  color: #0A223D;
-}
-
+/*menu toogle*/
 .menu-button {
   position: relative;
   display: none;
@@ -582,6 +545,70 @@ ul {
 
 .newsletter .form-search__button {
   height: 55px;
+}
+
+/*дополнительная навигация*/
+/*breadcrumbs*/
+.breadcrumbs-primary {
+  padding: 18px 0;
+}
+
+.breadcrumbs-item {
+  position: relative;
+  margin-right: 12px;
+}
+
+.breadcrumbs-item::after {
+  content: "/";
+  position: absolute;
+  display: block;
+  top: 0;
+  right: -9px;
+}
+
+.breadcrumbs-item:last-child::after {
+  content: "";
+}
+
+.breadcrumbs-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.breadcrumbs-link {
+  font-family: 'Mulish', sans-serif;
+  font-size: 14px;
+  line-height: 13px;
+  color: #0A223D;
+}
+
+.breadcrumb-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 18px 0;
+}
+
+.breadcrumb-list__item {
+  font-size: 10px;
+  line-height: 13px;
+}
+
+.breadcrumb-list__item:not(:last-child)::after {
+  content: '/';
+  margin: 4px;
+}
+
+.breadcrumb-list__link {
+  text-decoration: none;
+  color: inherit;
 }
 
 /*медиа запросы*/
