@@ -666,30 +666,30 @@ ul {
   .header-menu {
     padding: 22px 0;
   }
-  .about__center {
+  .hotel__center {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  .about__img-wrapper {
+  .hotel__img-wrapper {
     margin-right: 0;
     margin-bottom: 30px;
   }
-  .about__details-wrapper {
+  .hotel__details-wrapper {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
   }
-  .about__map {
+  .hotel__map {
     margin-top: 0;
     margin-left: 20px;
   }
 }
 
 @media (max-width: 768px) {
-  .header, .about {
+  .header, .hotel {
     padding: 0 20px;
   }
   .form-search, .user {
@@ -704,12 +704,12 @@ ul {
   .user-rating {
     display: block;
   }
-  .about__img-wrapper {
+  .hotel__img-wrapper {
     margin-right: 0;
     margin-bottom: 30px;
     max-width: 700px;
   }
-  .about__details-wrapper {
+  .hotel__details-wrapper {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -718,7 +718,7 @@ ul {
         -ms-grid-row-align: center;
         align-self: center;
   }
-  .about__map {
+  .hotel__map {
     margin-top: 20px;
     margin-left: 0;
   }
@@ -744,7 +744,7 @@ ul {
   .breadcrumbs-link {
     font-size: 10px;
   }
-  .about__title {
+  .hotel__title {
     font-size: 24px;
     line-height: 30px;
   }
