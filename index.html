@@ -78,50 +78,67 @@
             </ul>
         </div>
     </nav>
-    <section class="about">
+    <section class="hotel">
         <div class="container">
-            <div class="about__wrapper">
-                <div class="about__header">
-                        <div class="about__hotel-info">
-                            <div class="hotel-info__wrapper">
-                                <div class="hotel-rating">
-                                    <img src="img/icons/sprite.svg#star" alt="star">
-                                </div>
-                                <h1 class="about__title">GRAND HILTON HOTEL</h1>
-                                <span class="color-badge">Flash Offer</span>
+            <div class="hotel__wrapper">
+                <div class="hotel__header">
+                    <div class="hotel-info">
+                        <div class="hotel-info__wrapper">
+                            <div class="hotel-rating">
+                                <svg class="icon">
+                                    <use xlink:href="img/icons/sprite.svg#star"></use>
+                                </svg>
+                                <svg class="icon">
+                                    <use xlink:href="img/icons/sprite.svg#star"></use>
+                                </svg>
+                                <svg class="icon">
+                                    <use xlink:href="img/icons/sprite.svg#star"></use>
+                                </svg>
+                                <svg class="icon">
+                                    <use xlink:href="img/icons/sprite.svg#star"></use>
+                                </svg>
+                                <svg class="icon">
+                                    <use xlink:href="img/icons/sprite.svg#star"></use>
+                                </svg>
                             </div>
-                            <div class="breadcrumb">
-                                <ul class="breadcrumb-list">
-                                    <li class="breadcrumb-list__item"><a href="" class="breadcrumb-list__link">Half-Board</a></li>
-                                    <li class="breadcrumb-list__item"><a href="" class="breadcrumb-list__link">All Inclusive + Complimentary Activities +
-                                            Child Stays Free</a></li>
-                                </ul>
-                            </div>
+                            <h1 class="hotel__title">grand hilton hotel</h1>
+                            <span class="hotel__color-badge color-badge">Flash Offer</span>
                         </div>
-                        <div class="user-rating">
-                            <a href="" class="user-rating__text">
-                                User rating
-                            </a>
-                            <div class="user-rating__score">
-                                <span class="score-real">4.5</span>
-                                <span class="score-max">5</span>
-                            </div>
+                        <p class="hotel__description">
+                            Half-Board / All Inclusive + Complimentary Activities + Child Stays Free
+                        </p>
+                        <div class="breadcrumb" style="display: none;">
+                            <ul class="breadcrumb-list">
+                                <li class="breadcrumb-list__item"><a href="" class="breadcrumb-list__link">Half-Board</a></li>
+                                <li class="breadcrumb-list__item"><a href="" class="breadcrumb-list__link">All Inclusive + Complimentary Activities +
+                                        Child Stays Free</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="user-rating">
+                        <a href="" class="user-rating__text">
+                            User rating
+                        </a>
+                        <div class="user-rating__score">
+                            <span class="score-real">4.5</span>
+                            <span class="score-max">5</span>
                         </div>
                     </div>
                 </div>
-                <!--// about wrapper-->
-                <!--about center-->
-                <div class="about__center">
-                    <div class="about__img-wrapper">
+                <!--// hotel wrapper-->
+
+                <!--hotel center-->
+                <div class="hotel__center">
+                    <div class="hotel__img-wrapper">
                         <img src="img/hotels/grand-hilton.jpg" alt="" class="hotel-img">
                     </div>
-                    <div class="about__details-wrapper">
-                        <div class="about__details">
+                    <div class="hotel__details-wrapper">
+                        <div class="hotel__details">
                             <div class="details-info">
                                 <div class="details-info__price">
-                                    <div class="about__item">
-                                        <span class="about-text">price starts as</span>
-                                        <span class="about-price">$ 8,500</span>
+                                    <div class="hotel__item">
+                                        <span class="hotel-text">price starts as</span>
+                                        <span class="hotel-price">$ 8,500</span>
                                         <div class="details-breadcrumbs">
                                             <span class="details-breadcrumbs__text">
                                                 per room
@@ -131,14 +148,14 @@
                                             </span>
                                         </div>
                                     </div>
-                                    <div class="about__item">
-                                        <span class="about-text about__add-info">
+                                    <div class="hotel__item">
+                                        <span class="hotel-text hotel__add-info">
                                             <svg class="icon">
                                                 <use xlink:href="img/icons/sprite.svg#user"></use>
                                             </svg>
                                             2 x Guests
                                         </span>
-                                        <span class="about-text about__add-info">
+                                        <span class="hotel-text hotel__add-info">
                                             <svg class="icon">
                                                 <use xlink:href="img/icons/sprite.svg#home"></use>
                                             </svg>
@@ -146,9 +163,9 @@
                                         </span>
                                     </div>
                                 </div>
-                                <div class="about__call-click">
-                                    <p class="about-text click-on-text">Quick Booking</p>
-                                    <a href="tel:12100" class="about-text click-on-number">
+                                <div class="hotel__call-click">
+                                    <p class="hotel-text click-on-text">Quick Booking</p>
+                                    <a href="tel:12100" class="hotel-text click-on-number">
                                         <svg class="icon">
                                             <use xlink:href="img/icons/sprite.svg#phone-call"></use>
                                         </svg>
@@ -158,15 +175,18 @@
                             </div>
                             <button class="details-button" type="submit">View Other Options</button>
                         </div>
-                        <div class="about__map">
+                        <div class="hotel__map">
                             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6307.211177109344!2d-122.42298247859854!3d37.77584529530633!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808580997aeae663%3A0xb2706dff83574f4a!2z0KHQuNGC0Lgt0YXQvtC70Lsg0KHQsNC9LdCk0YDQsNC90YbQuNGB0LrQvg!5e0!3m2!1sru!2sru!4v1637107084701!5m2!1sru!2sru"
                             width="347" height="213" style="border:0;" allowfullscreen="" loading="lazy">
                             </iframe>
                         </div>
                     </div>
                 </div>
+                <!--// hotel center-->
             </div>
+            <!--// hotel wrapper-->
         </div>
+        <!--// container-->
     </section>
     <section class="newsletter">
         <div class="container">
