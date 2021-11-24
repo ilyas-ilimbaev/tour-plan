@@ -549,7 +549,7 @@ ul {
 
 /*дополнительная навигация*/
 /*breadcrumbs*/
-.breadcrumbs-primary {
+.breadcrumb-secondary {
   padding: 18px 0;
 }
 
@@ -597,16 +597,18 @@ ul {
 }
 
 .breadcrumb-list__item {
+  font-family: 'Mulish', sans-serif;
   font-size: 10px;
   line-height: 13px;
 }
 
 .breadcrumb-list__item:not(:last-child)::after {
   content: '/';
-  margin: 4px;
+  margin: 0 4px;
 }
 
 .breadcrumb-list__link {
+  font-family: inherit;
   text-decoration: none;
   color: inherit;
 }
