@@ -401,6 +401,7 @@ ul {
 }
 
 .details-button {
+  width: 100%;
   margin-top: 17px;
   padding: 13px 84px;
   font-family: "Nunito", sans-serif;
@@ -411,6 +412,7 @@ ul {
   background: #EC1F46;
   border: none;
   border-radius: 4px;
+  cursor: pointer;
 }
 
 .hotel__map {
@@ -476,6 +478,10 @@ ul {
 
 .newsletter .form-search__button {
   height: 55px;
+}
+.newsletter__input {
+  font-weight: 300;
+  font-size: 14px;
 }
 
 /*дополнительная навигация*/
@@ -600,7 +606,7 @@ ul {
     padding: 0 20px;
   }
 
-  .form-search, .user {
+  .header__form-search, .user, .header-menu {
     display: none;
   }
 
@@ -635,6 +641,16 @@ ul {
     margin-top: 20px;
     margin-left: 0;
   }
+
+  .newsletter__wrapper {
+    flex-direction: column;
+  }
+
+  .newsletter__form-search {
+    margin-left: 0;
+    margin-top: 37px;
+    max-width: 280px;
+  }
 }
 @media (max-width: 576px) {
   .user-rating {
@@ -666,14 +682,14 @@ ul {
   .hotel__img-wrapper, .hotel__details, .hotel__map {
     max-width: 279px;
   }
+
+  .details-button {
+    padding: 13px 0px;
+  }
 }
 @media (max-width: 320px) {
   .container {
     max-width: 280px;
-  }
-
-  .form-search, .user, .header-menu {
-    display: none;
   }
 
   .logotype {
@@ -690,7 +706,16 @@ ul {
     line-height: 30px;
   }
 
-  .details-button {
-    padding: 13px 54px;
+  .newsletter__title {
+    font-size: 30px;
+  }
+
+  .clarification {
+    font-size: 20px;
+  }
+
+  .newsletter__form-search {
+    width: 100%;
+    max-width: 280px;
   }
 }/*# sourceMappingURL=style.css.map */

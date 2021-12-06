@@ -44,7 +44,7 @@
 @media (max-width: 768px)
     .header, .hotel
         padding: 0 20px
-    .form-search, .user
+    .header__form-search, .user, .header-menu
         display: none
     .menu-button
         display: block
@@ -64,7 +64,12 @@
         max-width: 340px
         margin-top: 20px
         margin-left: 0
-        
+    .newsletter__wrapper
+        flex-direction: column
+    .newsletter__form-search
+        margin-left: 0
+        margin-top: 37px
+        max-width: 280px
 @media (max-width: 576px)
     .user-rating
         display: none    
@@ -82,11 +87,11 @@
         order: -1
     .hotel__img-wrapper, .hotel__details, .hotel__map
         max-width: 279px
+    .details-button
+        padding: 13px 0px
 @media (max-width: 320px)
     .container
         max-width: 280px
-    .form-search, .user, .header-menu
-        display: none
     .logotype
         font-size: 14px
         line-height: 13px
@@ -95,5 +100,10 @@
     .hotel__title
         font-size: 24px
         line-height: 30px
-    .details-button
-        padding: 13px 54px
+    .newsletter__title
+        font-size: 30px
+    .clarification
+        font-size: 20px
+    .newsletter__form-search
+        width: 100%
+        max-width: 280px
