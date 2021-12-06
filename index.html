@@ -131,7 +131,19 @@
                 <!--hotel center-->
                 <div class="hotel__center">
                     <div class="hotel__img-wrapper">
-                        <img src="img/hotels/grand-hilton.jpg" alt="" class="hotel-img">
+                        <!-- Slider main container -->
+                        <div class="swiper">
+                            <!-- Additional required wrapper -->
+                            <div class="swiper-wrapper">
+                                <!-- Slides -->
+                                <div class="swiper-slide"><img src="img/hotels/grand-hilton.jpg" alt="" class="hotel-img"></div>
+                                <div class="swiper-slide"><img src="img/hotels/grand-hilton.jpg" alt="" class="hotel-img"></div>
+                                <div class="swiper-slide"><img src="img/hotels/grand-hilton.jpg" alt="" class="hotel-img"></div>
+                            </div>                        
+                            <!-- If we need navigation buttons -->
+                            <div class="swiper-button-prev"></div>
+                            <div class="swiper-button-next"></div>
+                        </div>
                     </div>
                     <div class="hotel__details-wrapper">
                         <div class="hotel__details">
@@ -204,5 +216,6 @@
     </section>
     <!--Скрипты-->
     <script src="libs/swiper-bundle/swiper-bundle.min.js"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>

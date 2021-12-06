@@ -53,15 +53,18 @@
     .user-rating
         display: block
     .hotel__img-wrapper
-        margin-right: 0
-        margin-bottom: 30px
+        margin: 0 auto 20px auto
         max-width: 700px
     .hotel__details-wrapper
         flex-direction: column
         align-self: center
+    .hotel__details
+        max-width: 340px
     .hotel__map
+        max-width: 340px
         margin-top: 20px
         margin-left: 0
+        
 @media (max-width: 576px)
     .user-rating
         display: none    
@@ -77,6 +80,8 @@
         margin-bottom: 10px
         margin-left: 0
         order: -1
+    .hotel__img-wrapper, .hotel__details, .hotel__map
+        max-width: 279px
 @media (max-width: 320px)
     .container
         max-width: 280px
@@ -90,3 +95,5 @@
     .hotel__title
         font-size: 24px
         line-height: 30px
+    .details-button
+        padding: 13px 54px
