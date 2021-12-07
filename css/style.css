@@ -276,7 +276,7 @@ ul {
   overflow: hidden;
 }
 
-.swiper:after {
+.hotel-swiper:after {
   content: "";
   position: absolute;
   display: block;
@@ -433,7 +433,7 @@ ul {
   background-image: url("../img/newsletter.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center;
+  background-position: 50% 0%;
 }
 
 .newsletter::after {
@@ -482,6 +482,78 @@ ul {
 .newsletter__input {
   font-weight: 300;
   font-size: 14px;
+}
+
+.reviews-title {
+  margin-bottom: 115px;
+  font-family: "Mulish", sans-serif;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 45px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.reviews__slider {
+  position: relative;
+}
+
+.reviews__swiper {
+  max-width: 731px;
+  margin: 0 auto;
+  background-color: #fff;
+  padding: 0 97px 30px 97px;
+}
+
+.swiper-button-reviews-prev::after {
+  background: no-repeat center/contain url("../img/icons/arrow-prev-reviews.svg");
+}
+
+.swiper-button-reviews-next::after {
+  background: no-repeat center/contain url("../img/icons/arrow-next-reviews.svg");
+}
+
+.reviews__user-info {
+  margin-bottom: 32px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.reviews__user-pic {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  background-color: #C4C4C4;
+}
+
+.reviews__user-name {
+  display: inline-block;
+  margin: 10px 0;
+  font-family: "Mulish", sans-serif;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  color: #EC1F46;
+}
+
+.reviews__date-post {
+  display: inline-block;
+  margin-bottom: 6px;
+  font-family: "Mulish", sans-serif;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 13px;
+}
+
+.reviews__text {
+  font-family: "Mulish", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 160%;
+  text-align: justify;
+  color: #333333;
 }
 
 /*дополнительная навигация*/
