@@ -13,7 +13,10 @@ const swiper = new Swiper('.swiper', {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',
   },
-
+  keyboard: {
+    enabled: true,
+    onlyInViewport: false,
+  },
   // And if we need scrollbar
   scrollbar: {
     el: '.swiper-scrollbar',
