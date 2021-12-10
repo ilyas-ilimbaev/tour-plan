@@ -3,7 +3,8 @@
         max-width: 910px
 @media (max-width: 992px)
     .container
-        max-width: 700px
+        max-width: 760px
+        padding: 0 20px
     .header
         padding: 0
     .header-top
@@ -34,10 +35,11 @@
     .reviews-slide__item
         max-width: 579px
         padding: 0 70px 30px 70px
+    .activities-card
+        width: 339px
+        margin: 0 20px 20px 0
     
 @media (max-width: 768px)
-    .header, .hotel, .reviews
-        padding: 0 20px
     .header__form-search, .user, .header-menu
         display: none
     .menu-button
@@ -64,14 +66,21 @@
         margin-left: 0
         margin-top: 37px
         max-width: 280px
-    .activities-card
-        width: 339px
-        margin: 0 20px 20px 0
-    .reviews__title
-        margin-bottom: 50px
-        font-size: 30px
-    .reviews-slide__item
-        padding: 0 62px 30px 62px
+    .reviews
+        padding: 40px 0 60px 0
+        &__title
+            margin-bottom: 50px
+            font-size: 30px
+        &-slide__item
+            padding: 0 62px 30px 62px
+    .activities
+        padding: 60px 0 70px 0
+        &__card-wrapper
+            margin-right: 0
+            justify-content: center
+        &-card
+            max-width: 300px
+            margin: 0 20px 20px 0
 @media (max-width: 576px)
     .user-rating
         display: none    
@@ -95,6 +104,7 @@
 @media (max-width: 320px)
     .container
         max-width: 280px
+        padding: 0
     .logotype
         font-size: 14px
         line-height: 13px
@@ -118,3 +128,11 @@
         padding: 0 31px 30px 31px
     .swiper-button-reviews-prev, .swiper-button-reviews-next
         top: 45px
+    .activities
+        padding: 40px 0 60px 0
+        &__title
+            margin-bottom: 36px
+            font-size: 18px
+        &-card
+            margin-right: 0
+            max-width: 280px
