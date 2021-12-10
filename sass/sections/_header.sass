@@ -1,14 +1,26 @@
 /*header*/
 .header 
     background-color: #fff
-
-.header-top 
-    padding: 40px 0
-    background-color: #fff
-    display: flex
-    align-items: center
-    justify-content: space-between
-
+    &-top 
+        padding: 40px 0
+        background-color: #fff
+        display: flex
+        align-items: center
+        justify-content: space-between
+    &-menu 
+        padding: 30px 0
+        background-color: #0A223D
+    &-list-item-link 
+        font-family: $mulish
+        font-weight: bold
+        font-size: 14px
+        line-height: 18px
+        text-transform: uppercase
+        color: #FFFFFF
+    &-nav__list 
+        display: flex
+        justify-content: space-between
+        align-items: center
 .right-block 
     display: flex
     align-items: center
@@ -79,22 +91,6 @@
         line-height: 18px
         color: $text-color
 
-.header-menu 
-    padding: 30px 0
-    background-color: #0A223D
-
-.header-list-item-link 
-    font-family: $mulish
-    font-weight: bold
-    font-size: 14px
-    line-height: 18px
-    text-transform: uppercase
-    color: #FFFFFF
-
-.header-nav__list 
-    display: flex
-    justify-content: space-between
-    align-items: center
 /*menu toogle*/
 .menu-button
     position: relative

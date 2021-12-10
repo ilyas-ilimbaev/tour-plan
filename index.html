@@ -138,9 +138,9 @@
                             <!-- Additional required wrapper -->
                             <div class="swiper-wrapper">
                                 <!-- Slides -->
-                                <div class="swiper-slide"><img src="img/hotels/grand-hilton.jpg" alt="" class="hotel-img"></div>
-                                <div class="swiper-slide"><img src="img/hotels/grand-hilton-hotel.jpg" alt="" class="hotel-img"></div>
-                                <div class="swiper-slide"><img src="img/hotels/grand-hilton-beach.jpg" alt="" class="hotel-img"></div>
+                                <div class="swiper-slide hotel-slide__item"><img src="img/hotels/grand-hilton.jpg" alt="" class="hotel-img"></div>
+                                <div class="swiper-slide hotel-slide__item"><img src="img/hotels/grand-hilton-hotel.jpg" alt="" class="hotel-img"></div>
+                                <div class="swiper-slide hotel-slide__item"><img src="img/hotels/grand-hilton-beach.jpg" alt="" class="hotel-img"></div>
                             </div>                        
                             <!-- If we need navigation buttons -->
                             <div class="swiper-button-prev"></div>
@@ -210,9 +210,9 @@
                 <div class="newsletter-desc">
                     <h3 class="newsletter__title"><span class="clarification">subscribe to our</span><br>Newsletter</h3>
                 </div>
-                <form action="" class="form-search newsletter__form-search">
-                    <input class="form-search__input newsletter__input" type="text" placeholder="Your email address">
-                    <button class="form-search__button" type="submit">Send</button>
+                <form action="" class="form-search newsletter-form">
+                    <input class="form-search__input newsletter-form__input" type="text" placeholder="Your email address">
+                    <button class="form-search__button newsletter-form__button" type="submit">Send</button>
                 </form>
             </div>
         </div>
@@ -220,23 +220,21 @@
     <section class="reviews">
         <div class="container">
             <div class="reviews__wrapper">
-                <h3 class="reviews-title">What people think about us</h3>
+                <h3 class="reviews__title">What people think about us</h3>
                 <div class="reviews__slider">
                     <div class="swiper">                      
                         <!-- Additional required wrapper -->
                         <div class="swiper-wrapper">
                             <!-- Slides -->
-                            <div class="swiper-slide">
-                                <div class="reviews__swiper">
-                                    <div class="reviews__user-info">
-                                        <div class="reviews__user">
-                                            <div class="reviews__user-pic">
-                                                <img class="user-pic" src="img/icons/user-pic.png" alt="avatar">
-                                            </div>
-                                            <span class="reviews__user-name">Megan Fox</span>
+                            <div class="swiper-slide reviews-slide">
+                                <div class="reviews-slide__item">
+                                    <div class="reviews-slide__user-info">
+                                        <div class="reviews-slide__avatar">
+                                            <img class="reviews__avatar" src="img/icons/user-pic.png" alt="avatar">
                                         </div>
-                                        <span class="reviews__date-post">Stayed 18 Nov, 2019</span>
-                                        <div class="reviews__user-rating">
+                                        <h3 class="reviews-slide__username">Megan Fox</h3>
+                                        <span class="reviews-slide__date">Stayed 18 Nov, 2019</span>
+                                        <div class="reviews-slide__rating">
                                             <svg class="icon">
                                                 <use xlink:href="img/icons/sprite.svg#star"></use>
                                             </svg>
@@ -254,7 +252,7 @@
                                             </svg>
                                         </div>
                                     </div>
-                                    <p class="reviews__text">
+                                    <p class="reviews-slide__text">
                                         It was very nice hotel with cleanliness. Staff behavior was good and polite. They welcome us very well. Issue was
                                         only
                                         that Lift was not in working and we were allotted to 3rd floor and amenities articles were in corner of gallery
@@ -266,17 +264,17 @@
                                     </p>
                                 </div>
                             </div>
-                            <div class="swiper-slide">
-                                <div class="reviews__swiper">
-                                    <div class="reviews__user-info">
+                            <div class="swiper-slide reviews-slide">
+                                <div class="reviews-slide__item">
+                                    <div class="reviews-slide__user-info">
                                         <div class="reviews__user">
-                                            <div class="reviews__user-pic">
-                                                <img class="user-pic" src="img/icons/user-pic.png" alt="avatar">
+                                            <div class="reviews-slide__avatar">
+                                                <img class="reviews__avatar" src="img/icons/user-pic.png" alt="avatar">
                                             </div>
-                                            <span class="reviews__user-name">Megan Fox</span>
+                                            <span class="reviews-slide__username">Megan Fox</span>
                                         </div>
-                                        <span class="reviews__date-post">Stayed 18 Nov, 2019</span>
-                                        <div class="reviews__user-rating">
+                                        <span class="reviews-slide__date">Stayed 18 Nov, 2019</span>
+                                        <div class="reviews-slide__rating">
                                             <svg class="icon">
                                                 <use xlink:href="img/icons/sprite.svg#star"></use>
                                             </svg>
@@ -294,7 +292,7 @@
                                             </svg>
                                         </div>
                                     </div>
-                                    <p class="reviews__text">
+                                    <p class="reviews-slide__text">
                                         It was very nice hotel with cleanliness. Staff behavior was good and polite. They welcome us very well. Issue was
                                         only
                                         that Lift was not in working and we were allotted to 3rd floor and amenities articles were in corner of gallery
@@ -306,17 +304,17 @@
                                     </p>
                                 </div>
                             </div>
-                            <div class="swiper-slide">
-                                <div class="reviews__swiper">
-                                    <div class="reviews__user-info">
+                            <div class="swiper-slide reviews-slide">
+                                <div class="reviews-slide__item">
+                                    <div class="reviews-slide__user-info">
                                         <div class="reviews__user">
-                                            <div class="reviews__user-pic">
-                                                <img class="user-pic" src="img/icons/user-pic.png" alt="avatar">
+                                            <div class="reviews-slide__avatar">
+                                                <img class="reviews__avatar" src="img/icons/user-pic.png" alt="avatar">
                                             </div>
-                                            <span class="reviews__user-name">Megan Fox</span>
+                                            <span class="reviews-slide__username">Megan Fox</span>
                                         </div>
-                                        <span class="reviews__date-post">Stayed 18 Nov, 2019</span>
-                                        <div class="reviews__user-rating">
+                                        <span class="reviews-slide__date">Stayed 18 Nov, 2019</span>
+                                        <div class="reviews-slide__rating">
                                             <svg class="icon">
                                                 <use xlink:href="img/icons/sprite.svg#star"></use>
                                             </svg>
@@ -334,7 +332,7 @@
                                             </svg>
                                         </div>
                                     </div>
-                                    <p class="reviews__text">
+                                    <p class="reviews-slide__text">
                                         It was very nice hotel with cleanliness. Staff behavior was good and polite. They welcome us very well. Issue was
                                         only
                                         that Lift was not in working and we were allotted to 3rd floor and amenities articles were in corner of gallery
@@ -347,10 +345,10 @@
                                 </div>
                             </div>
                         </div>
+                        <!-- If we need navigation buttons -->
+                        <div class="swiper-button-prev swiper-button-reviews-prev"></div>
+                        <div class="swiper-button-next swiper-button-reviews-next"></div>
                     </div>
-                    <!-- If we need navigation buttons -->
-                    <div class="swiper-button-prev swiper-button-reviews-prev"></div>
-                    <div class="swiper-button-next swiper-button-reviews-next"></div>
                 </div>
             </div>
         </div>
@@ -401,8 +399,8 @@
         </div>
     </section>
     <!--Скрипты-->
-    <script src="libs/paralax/bgscroll.js"></script>
     <script src="libs/swiper-bundle/swiper-bundle.min.js"></script>
+    <script src="libs/paralax/bgscroll.js"></script>
     <script src="js/main.js"></script>
 </body>
 </html>
