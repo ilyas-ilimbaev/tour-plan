@@ -1,4 +1,4 @@
-const swiper = new Swiper('.swiper', {
+const hotelSwiper = new Swiper('.hotel-swiper', {
   // Optional parameters
   direction: 'horizontal',
   loop: true,
@@ -10,12 +10,32 @@ const swiper = new Swiper('.swiper', {
 
   // Navigation arrows
   navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
+    nextEl: '.hotel-button-next',
+    prevEl: '.hotel-button-prev',
   },
   keyboard: {
     enabled: true,
     onlyInViewport: false,
+  },
+  // And if we need scrollbar
+  scrollbar: {
+    el: '.swiper-scrollbar',
+  },
+});
+const reviewsSwiper = new Swiper('.reviews-swiper', {
+  // Optional parameters
+  direction: 'horizontal',
+  loop: true,
+
+  // If we need pagination
+  pagination: {
+    el: '.swiper-pagination',
+  },
+
+  // Navigation arrows
+  navigation: {
+    nextEl: '.reviews-button-next',
+    prevEl: '.reviews-button-prev',
   },
   // And if we need scrollbar
   scrollbar: {
