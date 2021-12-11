@@ -76,7 +76,7 @@ ul {
   line-height: 24px;
   color: #333333;
 }
-.logotype_color {
+.logotype-color {
   color: #EC1F46;
 }
 
@@ -766,13 +766,48 @@ ul {
 
 .footer {
   padding: 108px 0 46px 0;
+  background-color: #0A223D;
+}
+.footer__wrapper {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
 }
 .footer__title {
+  display: flex;
+  flex-direction: column;
   font-family: "Luckiest Guy", cursive;
   font-weight: 400;
   font-size: 64px;
   line-height: 64px;
   color: #fff;
+}
+.footer__item-title {
+  margin-bottom: 24px;
+  font-family: "Mulish", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  color: #fff;
+}
+.footer__list-item {
+  margin-bottom: 10px;
+}
+.footer__list-item-link {
+  font-family: "Mulish", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  color: #BDBDBD;
+}
+.footer__more {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+.footer__item-icon {
+  margin-right: 10px;
+}
+.footer-icon {
+  width: 20px;
+  height: 20px;
 }
 
 /*дополнительная навигация*/

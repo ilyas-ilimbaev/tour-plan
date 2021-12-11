@@ -1,9 +1,38 @@
 .footer
     padding: 108px 0 46px 0
+    background-color: #0A223D
     &__wrapper
+        display: grid
+        grid-template-columns: repeat(4, 1fr)
+
     &__title
+        display: flex
+        flex-direction: column
         font-family: 'Luckiest Guy', cursive
         font-weight: 400
         font-size: 64px
         line-height: 64px
         color: #fff
+    &__item-title
+        margin-bottom: 24px
+        font-family: $mulish
+        font-size: 18px
+        font-weight: 700
+        color: #fff
+    &__list
+        &-item
+            margin-bottom: 10px
+            &-link
+                font-family: $mulish
+                font-weight: 400
+                font-size: 14px
+                color: #BDBDBD
+    &__more
+        display: flex
+        align-items: center
+        flex-direction: row
+    &__item-icon
+        margin-right: 10px
+    &-icon
+        width: 20px
+        height: 20px
