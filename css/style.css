@@ -201,7 +201,7 @@ ul {
   text-transform: uppercase;
 }
 
-.hotel-rating {
+.rating {
   width: 100%;
 }
 
@@ -426,6 +426,146 @@ ul {
   width: 100%;
   border-radius: 10px;
   overflow: hidden;
+}
+
+.otherpack {
+  padding: 40px 0 70px 0;
+}
+.otherpack__title {
+  margin-bottom: 65px;
+  font-family: "Mulish", sans-serif;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 45px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #333333;
+}
+.otherpack__content {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 350px);
+  grid-template-rows: 500px;
+  gap: 30px;
+  justify-content: center;
+}
+.otherpack-card {
+  width: 350px;
+  background-color: #0A223D;
+  border-radius: 8px;
+  overflow: hidden;
+}
+.otherpack-card__img {
+  height: 250px;
+  overflow: hidden;
+}
+.otherpack-card__title {
+  margin-top: 6px;
+  margin-bottom: 23px;
+  font-family: "Mulish", sans-serif;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 23px;
+  color: #fff;
+}
+.otherpack-card__desc-container {
+  padding: 30px 26px 26px 26px;
+}
+.otherpack-card__desc {
+  margin-bottom: 24px;
+  display: flex;
+  flex-direction: column;
+}
+.otherpack-card__text {
+  margin-bottom: 34px;
+  font-family: "Mulish", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  color: #FFFFFF;
+}
+.otherpack-card-first {
+  width: 730px;
+  display: grid;
+  grid-column: 1/span 2;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 500px;
+}
+.otherpack-card__img-first {
+  height: inherit;
+}
+.otherpack-card__first-img {
+  height: 100%;
+}
+.otherpack-card__first-desc {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.otherpack__desc-item {
+  margin-bottom: 11px;
+  display: flex;
+  align-items: center;
+  font-family: "Mulish", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+  color: #fff;
+}
+.otherpack-img {
+  width: 100%;
+  height: inherit;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.otherpack-icon {
+  margin-right: 14px;
+  width: 14px;
+  height: 14px;
+}
+.otherpack__booking-info {
+  display: grid;
+  grid-template-rows: 20px 1fr;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+}
+.otherpack__old-price {
+  position: relative;
+  grid-column: 1/span 2;
+  font-family: "Mulish", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  color: #fff;
+}
+.otherpack__old-price::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 49px;
+  height: 1px;
+  background-color: #fff;
+  top: 51%;
+  left: 0;
+}
+.otherpack__current-price {
+  font-family: "Mulish", sans-serif;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 30px;
+  color: #fff;
+}
+.otherpack__button {
+  padding: 10px 26px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Nunito", sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 19px;
+  color: #fff;
+  background: #EC1F46;
+  border-radius: 4px;
+  border: none;
 }
 
 /*newsletter*/
@@ -750,6 +890,19 @@ ul {
   .activities-card {
     width: 339px;
     margin: 0 20px 20px 0;
+  }
+
+  .otherpack__content {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 50%);
+  }
+
+  .otherpack-card {
+    width: 300px;
+  }
+
+  .otherpack-card-first {
+    width: 680px;
   }
 }
 @media (max-width: 768px) {

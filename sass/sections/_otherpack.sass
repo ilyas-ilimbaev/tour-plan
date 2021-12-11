@@ -1,0 +1,118 @@
+.otherpack
+    padding: 40px 0 70px 0
+    &__title
+        margin-bottom: 65px
+        font-family: $mulish
+        font-weight: bold
+        font-size: 36px
+        line-height: 45px
+        text-align: center
+        text-transform: uppercase
+        color: $text-color
+    &__content
+        display: grid
+        grid-template-columns: repeat(auto-fill, 350px)
+        grid-template-rows: 500px
+        gap: 30px
+        justify-content: center
+    &-card
+        width: 350px
+        background-color:#0A223D
+        border-radius: 8px
+        overflow: hidden
+        &__img
+            height: 250px
+            overflow: hidden
+        &__title
+            margin-top: 6px
+            margin-bottom: 23px
+            font-family: $mulish
+            font-weight: bold
+            font-size: 18px
+            line-height: 23px
+            color: #fff
+        &__desc-container
+            padding: 30px 26px 26px 26px
+        &__desc
+            margin-bottom: 24px
+            display: flex
+            flex-direction: column
+        &__text
+            margin-bottom: 34px
+            font-family: $mulish
+            font-weight: 400
+            font-size: 14px
+            color: #FFFFFF
+        &-first
+            width: 730px
+            display: grid
+            grid-column: 1 / span 2
+            grid-template-columns: 1fr 1fr
+            grid-template-rows: 500px
+        &__img-first
+            height: inherit
+        &__first-img
+            height: 100%
+        &__first-desc
+            display: flex
+            flex-direction: column
+            justify-content: space-between
+    &__desc-item
+        margin-bottom: 11px
+        display: flex
+        align-items: center
+        font-family: $mulish
+        font-weight: 400
+        font-size: 12px
+        line-height: 15px
+        color: #fff
+    &-img
+        width: 100%
+        height: inherit
+        object-fit: cover
+    &-icon
+        margin-right: 14px
+        width: 14px
+        height: 14px
+    &__booking-info
+        display: grid
+        grid-template-rows: 20px 1fr
+        grid-template-columns: 1fr 1fr
+        align-items: center
+    &__old-price
+        position: relative
+        grid-column: 1 / span 2
+        font-family: $mulish
+        font-weight: 400
+        font-size: 14px
+        line-height: 18px
+        color: #fff
+        &::after
+            content: ""
+            position: absolute
+            display: block
+            width: 49px
+            height: 1px
+            background-color: #fff
+            top: 51%
+            left: 0
+
+    &__current-price
+        font-family: $mulish
+        font-weight: bold
+        font-size: 24px
+        line-height: 30px
+        color: #fff
+    &__button
+        padding: 10px 26px
+        display: inline-flex
+        justify-content: center
+        align-items: center
+        font-family: 'Nunito', sans-serif
+        font-weight: 600
+        font-size: 14px
+        line-height: 19px
+        color: #fff
+        background: #EC1F46
+        border-radius: 4px
+        border: none
