@@ -764,6 +764,17 @@ ul {
   border-radius: 4px;
 }
 
+.footer {
+  padding: 108px 0 46px 0;
+}
+.footer__title {
+  font-family: "Luckiest Guy", cursive;
+  font-weight: 400;
+  font-size: 64px;
+  line-height: 64px;
+  color: #fff;
+}
+
 /*дополнительная навигация*/
 /*breadcrumbs*/
 .breadcrumb {
