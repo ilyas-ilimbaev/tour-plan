@@ -1,38 +1,111 @@
 .footer
     padding: 108px 0 46px 0
     background-color: #0A223D
-    &__wrapper
+    &-wrapper
         display: grid
-        grid-template-columns: repeat(4, 1fr)
-
+        grid-template-columns: repeat(4, minmax(min-content, 1fr))
+        grid-gap: 20px
+        grid-auto-rows: minmax(40px, min-content)
+        align-items: start
+    &__logo
+        width: 166px
+        grid-row: 1 / 3
+        align-self: stretch
+    &__categories
+        grid-row: 1 / 4
+    &__social
+        &-network
+            display: flex
+            align-content: start
+            grid-row: 2 / 4
+            grid-column: span 2
+        &-links
+            display: flex
+            align-items: center
+            min-width: 83px
+            justify-content: space-between
+    &__contact
+        &-details
+            grid-column: span 2
+        &-form
+            grid-column: 3 / 5
     &__title
-        display: flex
-        flex-direction: column
-        font-family: 'Luckiest Guy', cursive
-        font-weight: 400
-        font-size: 64px
-        line-height: 64px
-        color: #fff
-    &__item-title
-        margin-bottom: 24px
+        margin-bottom: 27px
         font-family: $mulish
         font-size: 18px
         font-weight: 700
+        text-transform: uppercase
         color: #fff
-    &__list
-        &-item
-            margin-bottom: 10px
-            &-link
-                font-family: $mulish
-                font-weight: 400
-                font-size: 14px
-                color: #BDBDBD
-    &__more
+        &-messengers
+            margin-right: 43px
+            margin-bottom: 0
+        &--mb-3
+            margin-bottom: 34px
+    &-list
+    &__item
+        margin-bottom: 10px
         display: flex
-        align-items: center
-        flex-direction: row
-    &__item-icon
-        margin-right: 10px
-    &-icon
+        align-items: flex-start
+        font-family: $mulish
+        font-weight: 400
+        font-size: 14px
+        color: $footer-text-color
+        &-icon
+            margin-right: 18px
+    &__link
+        display: inline-flex
+        font-family: $mulish
+        font-weight: 400
+        font-size: 14px
+        color: $footer-text-color
+    &__icon
         width: 20px
         height: 20px
+    &-text
+        margin-bottom: 27px
+        display: flex
+    &__form
+        display: flex
+        align-items: center
+        justify-content: space-between
+        flex-wrap: wrap   
+    &__input
+        height: 50px
+        margin-bottom: 15px
+        padding: 0 23px
+        flex-basis: 48%
+    &__message
+        margin-bottom: 22px
+        padding: 18px 23px
+        flex-basis: 100%
+    &__input, &__message
+        font-family: $mulish
+        font-weight: 400
+        font-size: 12px
+        line-height: 15px
+        outline: none
+        border: none
+        border-radius: 4px
+    &__button
+        padding: 18px 64px
+        font-family: $mulish
+        font-weight: bold
+        font-size: 12px
+        line-height: 15px
+        color: #FFFFFF
+        background: #EC1F46
+        border: none
+        border-radius: 4px
+        cursor: pointer
+    &__info
+        font-family: $mulish
+        font-weight: bold
+        font-size: 12px
+        line-height: 15px
+        color: #E0E0E0
+    &__text
+        margin-bottom: 22px
+        font-family: $mulish
+        font-weight: 400
+        font-size: 14px
+        color: $footer-text-color
