@@ -80,12 +80,50 @@
             grid-column: 1/span 6
     
 @media (max-width: 768px)
-    .header__form-search, .user, .header-menu
+    body
+        padding-top: 78px
+    .header
+        &--mobile
+            position: fixed
+            top: 0
+            left: 0
+            right: 0
+            z-index: 99
+        &-menu
+            display: none
+            &__wrapper
+                display: flex
+                flex-direction: column
+                align-items: center
+            &--mobile
+                display: block
+                position: fixed
+                top: 78px
+                right: 0
+                bottom: 0
+                left: 0
+        &-nav__list--mobile
+            flex-direction: column
+        &-list-item
+            margin-bottom: 24px
+            &::last-child
+                margin-bottom: 0
+        &__form-search
+            width: 240px
+            margin: 27px 0 40px 0
+            display: flex
+    .form-search_desktop, .user--desktop-visible
         display: none
+    .user
+        flex-direction: column
+        &--mobile-form
+            display: flex
+        &__name
+            margin-top: 10px
+            margin-left: 0
+            color: #fff
     .menu-button
         display: block
-    .header-menu
-        display: none
     .user-rating
         display: block
     .hotel__img-wrapper
@@ -190,6 +228,8 @@
     .container
         max-width: 280px
         padding: 0
+    .header-menu--mobile
+        top: 73px
     .logotype
         font-size: 14px
         line-height: 13px

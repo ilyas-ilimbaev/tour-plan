@@ -89,6 +89,9 @@ ul {
   border-radius: 6px;
   overflow: hidden;
 }
+.form-search--mobile {
+  display: none;
+}
 .form-search__input {
   width: 100%;
   padding: 12px 16px 12px 23px;
@@ -138,6 +141,9 @@ ul {
   font-size: 14px;
   line-height: 18px;
   color: #333333;
+}
+.user--mobile-form {
+  display: none;
 }
 
 /*menu toogle*/
@@ -861,6 +867,7 @@ ul {
   margin-bottom: 22px;
   padding: 18px 23px;
   flex-basis: 100%;
+  resize: none;
 }
 .footer__input, .footer__message {
   font-family: "Mulish", sans-serif;
@@ -914,10 +921,6 @@ ul {
 
 /*дополнительная навигация*/
 /*breadcrumbs*/
-.breadcrumb {
-  padding: 0 20px;
-}
-
 .breadcrumb-secondary {
   padding: 18px 0;
 }
@@ -1096,16 +1099,66 @@ ul {
   }
 }
 @media (max-width: 768px) {
-  .header__form-search, .user, .header-menu {
+  body {
+    padding-top: 78px;
+  }
+
+  .header--mobile {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 99;
+  }
+  .header-menu {
     display: none;
+  }
+  .header-menu__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .header-menu--mobile {
+    display: block;
+    position: fixed;
+    top: 78px;
+    right: 0;
+    bottom: 0;
+    left: 0;
+  }
+  .header-nav__list--mobile {
+    flex-direction: column;
+  }
+  .header-list-item {
+    margin-bottom: 24px;
+  }
+  .header-list-item::last-child {
+    margin-bottom: 0;
+  }
+  .header__form-search {
+    width: 240px;
+    margin: 27px 0 40px 0;
+    display: flex;
+  }
+
+  .form-search_desktop, .user--desktop-visible {
+    display: none;
+  }
+
+  .user {
+    flex-direction: column;
+  }
+  .user--mobile-form {
+    display: flex;
+  }
+  .user__name {
+    margin-top: 10px;
+    margin-left: 0;
+    color: #fff;
   }
 
   .menu-button {
     display: block;
-  }
-
-  .header-menu {
-    display: none;
   }
 
   .user-rating {
@@ -1262,6 +1315,10 @@ ul {
   .container {
     max-width: 280px;
     padding: 0;
+  }
+
+  .header-menu--mobile {
+    top: 73px;
   }
 
   .logotype {

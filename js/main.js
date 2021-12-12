@@ -60,3 +60,53 @@ ymaps.ready(function(){
         zoom: 16
     });
 });
+//form validate
+// $('.footer__form').validate ({
+//     rules: {
+//         fullname: {
+//             required: true,
+//             email: true
+//         },
+//         number: {
+//             required: true
+//         },
+//         message: {
+//             required: true
+//         }
+//     },
+//     messages: {
+//         fullname: {
+//             required: 'enter a name'
+//         },
+//         number: {
+//             required: 'Enter the phone number'
+//         },
+//         message: {
+//             required: 'enter a message'
+//         }
+//     },
+//     submitHandler: function (from) {
+//   ajaxFormSubmit();
+// },
+// })
+//sending form
+function ajaxFormSubmit() {
+    let string = $(".footer__form").serialize();
+    $.ajax({
+        type: "POST",
+        url: "libs/php/mail.php",
+        data: string,
+        success: function (html) {
+            $(".result").html(html);
+        },
+    });
+    return false;
+}
+var menuButton = document.querySelector('.menu-button');
+menuButton.addEventListener('click', function() {
+  console.log("click or button");
+  document
+  .querySelector('.header-menu')
+  .classList.toggle('header-menu--mobile');
+
+});

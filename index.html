@@ -20,13 +20,13 @@
 </head>
 
 <body>
-    <header class="header">
+    <header class="header header--mobile">
         <div class="container">
             <div class="header__wrapper">
                 <div class="header-top">
                     <div class="header__right-block right-block">
                         <a href="" class="logotype">Best <span class="logotype logotype-color">tour</span> plan</a>
-                        <form action="" class="form-search header__form-search">
+                        <form action="" class="form-search header__form-search form-search_desktop">
                             <input class="form-search__input" type="text" placeholder="Search Location |">
                             <button class="form-search__button">
                                 <svg class="icon">
@@ -35,7 +35,7 @@
                             </button>
                         </form>
                     </div>
-                    <a href="" class="user">
+                    <a href="" class="user user--desktop-visible">
                         <img src="img/avatar.svg" alt="Avatar" class="user__avatar">
                         <span class="user__name">Nathan</span>
                     </a>
@@ -45,33 +45,47 @@
                 </div>
             </div>
         </div>
-        <div class="header-menu">
+        <div class="header-menu header-menu--mobile" id="header-menu">
             <div class="container">
-                <nav class="header-nav">
-                    <ul class="header-nav__list">
-                        <li class="header-list-item">
-                            <a href="" class="header-list-item-link">All Deals</a>
-                        </li>
-                        <li class="header-list-item">
-                            <a href="" class="header-list-item-link">Hotels</a>
-                        </li>
-                        <li class="header-list-item">
-                            <a href="" class="header-list-item-link">Activities</a>
-                        </li>
-                        <li class="header-list-item">
-                            <a href="" class="header-list-item-link">Hotel Day Packages</a>
-                        </li>
-                        <li class="header-list-item">
-                            <a href="" class="header-list-item-link">Restaurants</a>
-                        </li>
-                        <li class="header-list-item">
-                            <a href="" class="header-list-item-link">Events</a>
-                        </li>
-                        <li class="header-list-item">
-                            <a href="" class="header-list-item-link">Rodrigues</a>
-                        </li>
-                    </ul>
-                </nav>
+                <div class="header-menu__wrapper">
+                    <a href="" class="user user--mobile-form">
+                        <img src="img/avatar.svg" alt="Avatar" class="user__avatar">
+                        <span class="user__name">Nathan</span>
+                    </a>
+                    <form action="" class="form-search header__form-search form-search--mobile">
+                        <input class="form-search__input" type="text" placeholder="Search Location |">
+                        <button class="form-search__button">
+                            <svg class="icon">
+                                <use xlink:href="img/icons/sprite.svg#search"></use>
+                            </svg>
+                        </button>
+                    </form>
+                    <nav class="header-nav">
+                        <ul class="header-nav__list header-nav__list--mobile">
+                            <li class="header-list-item">
+                                <a href="" class="header-list-item-link">All Deals</a>
+                            </li>
+                            <li class="header-list-item">
+                                <a href="" class="header-list-item-link">Hotels</a>
+                            </li>
+                            <li class="header-list-item">
+                                <a href="" class="header-list-item-link">Activities</a>
+                            </li>
+                            <li class="header-list-item">
+                                <a href="" class="header-list-item-link">Hotel Day Packages</a>
+                            </li>
+                            <li class="header-list-item">
+                                <a href="" class="header-list-item-link">Restaurants</a>
+                            </li>
+                            <li class="header-list-item">
+                                <a href="" class="header-list-item-link">Events</a>
+                            </li>
+                            <li class="header-list-item">
+                                <a href="" class="header-list-item-link">Rodrigues</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
             </div>
         </div>
     </header>
@@ -701,10 +715,10 @@
                 <!-- ./footer__contact-details -->
                 <div class="footer__contact-form">
                     <h3 class="footer__title footer__title--mb-3">Send us a message</h3>
-                    <form action="#" class="footer__form">
-                        <input type="text" class="input footer__input" placeholder="You Full Name*">
-                        <input type="text" class="input footer__input" placeholder="Phone Number*">
-                        <textarea cols="30" rows="10" class="footer__message" placeholder="Message"></textarea>
+                    <form action="#" class="footer__form" enctype="multipart/form-data" method="post" id="form">
+                        <input type="text" name="fullname" class="input footer__input" placeholder="You Full Name*">
+                        <input type="text" name="number" class="input footer__input" placeholder="Phone Number*">
+                        <textarea cols="30" rows="10" name="message" class="footer__message" placeholder="Message"></textarea>
                         <button class="button footer__button" type="submit">Send</button>
                         <span class="footer__info">* Required Fields</span>
                     </form>
@@ -724,6 +738,7 @@
     </footer>
     <!--Скрипты-->
     <script src="libs/swiper-bundle/swiper-bundle.min.js"></script>
+    <script src="libs/jquery.validate/jquery.validate.js"></script>
     <script src="libs/paralax/bgscroll.js"></script>
     <script src="js/main.js"></script>
 </body>
